@@ -98,10 +98,10 @@ class UpdateMovieInfo extends Component {
               <br />
 
               <div className="form-group">
-                <label htmlFor="original_language">ISBN</label>
+                <label htmlFor="original_language">Language</label>
                 <input
                   type="text"
-                  placeholder="ISBN"
+                  placeholder="Language"
                   name="original_language"
                   className="form-control"
                   value={this.state.original_language}
@@ -113,7 +113,7 @@ class UpdateMovieInfo extends Component {
                 <label htmlFor="production_companies">Author</label>
                 <input
                   type="text"
-                  placeholder="Author"
+                  placeholder="Production Company"
                   name="production_companies"
                   className="form-control"
                   value={this.state.production_companies}
@@ -134,7 +134,7 @@ class UpdateMovieInfo extends Component {
               </div>
 
               <div className="form-group">
-                <label htmlFor="release_date">Published Date</label>
+                <label htmlFor="release_date">Release Date</label>
                 <input
                   type="date"
                   placeholder="release_date"
@@ -145,10 +145,10 @@ class UpdateMovieInfo extends Component {
                 />
               </div>
               <div className="form-group">
-                <label htmlFor="runtime">Publisher</label>
+                <label htmlFor="runtime">Length</label>
                 <input
                   type="text"
-                  placeholder="Publisher of this Movie"
+                  placeholder="Length of the film (min)"
                   name="runtime"
                   className="form-control"
                   value={this.state.runtime}

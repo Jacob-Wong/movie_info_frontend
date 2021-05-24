@@ -9,7 +9,7 @@ const MovieCard = (props) => {
     <div className="card-container">
       <img
         // src="https://commapress.co.uk/books/the-book-of-cairo/cairo-provisional-v3/image%2Fspan3"
-        src="https://drive.google.com/uc?id=1_KtfvGx5yEKq2BuIILnqKa2phxat77fZ"
+        src="https://drive.google.com/uc?id=1gsgObhfOLcNwrP5mOX0_Kds_IJV14Dh8"
         alt=""
       />
       <div className="desc">

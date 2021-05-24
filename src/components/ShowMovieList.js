@@ -13,8 +13,16 @@ class ShowMovieList extends Component {
   }
 
   componentDidMount() {
+    let title = this.props.match.params.title;
+    if (title === undefined || title === "null") {
+      title = "";
+      console.log("no params detected");
+    } else {
+      console.log(`the title is ${title}`);
+    }
+
     axios
-      .get("http://localhost:8082/api/movies")
+      .get("http://localhost:8082/api/movies?title=" + title)
       .then((res) => {
         this.setState({
           movies: res.data,
@@ -46,13 +54,6 @@ class ShowMovieList extends Component {
             </div>
 
             <div className="col-md-11">
-              <Link
-                to="/create-movie"
-                className="btn btn-outline-warning float-right"
-              >
-                + Add New Movie
-              </Link>
-              <br />
               <br />
               <hr />
             </div>

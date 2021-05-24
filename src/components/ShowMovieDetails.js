@@ -52,33 +52,33 @@ class showMovieDetails extends Component {
         </thead> */}
           <tbody>
             <tr>
-              <th scope="row">1</th>
-              <td>Title</td>
+              {/* <th scope="row">1</th> */}
+              <th>Title</th>
               <td>{movie.title}</td>
             </tr>
             <tr>
-              <th scope="row">2</th>
-              <td>Language</td>
+              {/* <th scope="row">2</th> */}
+              <th>Language</th>
               <td>{movie.original_language}</td>
             </tr>
             <tr>
-              <th scope="row">3</th>
-              <td>Company</td>
+              {/* <th scope="row">3</th> */}
+              <th>Company</th>
               <td>{movie.production_companies}</td>
             </tr>
             <tr>
-              <th scope="row">4</th>
-              <td>Overview</td>
+              {/* <th scope="row">4</th> */}
+              <th>Overview</th>
               <td>{movie.overview}</td>
             </tr>
             <tr>
-              <th scope="row">5</th>
-              <td>Release Date</td>
+              {/* <th scope="row">5</th> */}
+              <th>Release Date</th>
               <td>{movie.release_date}</td>
             </tr>
             <tr>
-              <th scope="row">6</th>
-              <td>Length of the film (min)</td>
+              {/* <th scope="row">6</th> */}
+              <th>Length of the film (min)</th>
               <td>{movie.runtime}</td>
             </tr>
           </tbody>

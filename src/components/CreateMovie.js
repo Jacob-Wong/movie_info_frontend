@@ -35,14 +35,15 @@ class CreateMovie extends Component {
     axios
       .post("http://localhost:8082/api/movies", data)
       .then((res) => {
-        this.setState({
-          title: "",
-          original_language: "",
-          production_companies: "",
-          overview: "",
-          release_date: "",
-          runtime: "",
-        });
+        // this.setState({
+        //   title: "",
+        //   original_language: "",
+        //   production_companies: "",
+        //   overview: "",
+        //   release_date: "",
+        //   runtime: "",
+        // });
+        alert("hihihihih");
         this.props.history.push("/");
       })
       .catch((err) => {
@@ -65,7 +66,7 @@ class CreateMovie extends Component {
               <h1 className="display-4 text-center">Add Movie</h1>
               <p className="lead text-center">Create new movie</p>
 
-              <form noValidate onSubmit={this.onSubmit}>
+              <form onSubmit={this.onSubmit}>
                 <div className="form-group">
                   <input
                     type="text"
@@ -113,7 +114,7 @@ class CreateMovie extends Component {
 
                 <div className="form-group">
                   <input
-                    type="Release date"
+                    type="date"
                     placeholder="release_date"
                     name="release_date"
                     className="form-control"
