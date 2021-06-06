@@ -1,3 +1,9 @@
+# Link
+
+frontend: https://github.com/Jacob-Wong/304cem_frontend
+backend: https://github.com/Jacob-Wong/304cem_backend
+demo: https://youtu.be/H6RCNLS5QFw
+
 # To start the frontend application
 
 npm i
