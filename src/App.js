@@ -1,13 +1,8 @@
 import React, { Component } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import {
-  Navbar,
-  Nav,
-  NavDropdown,
-  Form,
-  FormControl,
-  Button,
-} from "react-bootstrap";
+import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
 
 import "./App.css";
 
@@ -52,7 +47,7 @@ class App extends Component {
             <Nav className="mr-auto">
               <Nav.Link href="/">Movie List</Nav.Link>
               <Nav.Link href="/create-movie">Add Movie</Nav.Link>
-              <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+              {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">
                   Another action
@@ -64,7 +59,7 @@ class App extends Component {
                 <NavDropdown.Item href="#action/3.4">
                   Separated link
                 </NavDropdown.Item>
-              </NavDropdown>
+              </NavDropdown> */}
             </Nav>
             <Form inline>
               <FormControl

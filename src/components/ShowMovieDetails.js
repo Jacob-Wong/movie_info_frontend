@@ -42,42 +42,28 @@ class showMovieDetails extends Component {
     let MovieItem = (
       <div>
         <table className="table table-hover table-dark">
-          {/* <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-          </tr>
-        </thead> */}
           <tbody>
             <tr>
-              {/* <th scope="row">1</th> */}
               <th>Title</th>
               <td>{movie.title}</td>
             </tr>
             <tr>
-              {/* <th scope="row">2</th> */}
               <th>Language</th>
               <td>{movie.original_language}</td>
             </tr>
             <tr>
-              {/* <th scope="row">3</th> */}
               <th>Company</th>
               <td>{movie.production_companies}</td>
             </tr>
             <tr>
-              {/* <th scope="row">4</th> */}
               <th>Overview</th>
               <td>{movie.overview}</td>
             </tr>
             <tr>
-              {/* <th scope="row">5</th> */}
               <th>Release Date</th>
               <td>{movie.release_date}</td>
             </tr>
             <tr>
-              {/* <th scope="row">6</th> */}
               <th>Length of the film (min)</th>
               <td>{movie.runtime}</td>
             </tr>
@@ -90,12 +76,6 @@ class showMovieDetails extends Component {
       <div className="ShowMovieDetails">
         <div className="container">
           <div className="row">
-            <div className="col-md-10 m-auto">
-              <br /> <br />
-              <Link to="/" className="btn btn-outline-warning float-left">
-                Show Movie List
-              </Link>
-            </div>
             <br />
             <div className="col-md-8 m-auto">
               <h1 className="display-4 text-center">Movie's Record</h1>
@@ -127,9 +107,6 @@ class showMovieDetails extends Component {
               <br />
             </div>
           </div>
-          {/* <br />
-            <button type="button" class="btn btn-outline-info btn-lg btn-block">Edit Movie</button>
-            <button type="button" class="btn btn-outline-danger btn-lg btn-block">Delete Movie</button> */}
         </div>
       </div>
     );

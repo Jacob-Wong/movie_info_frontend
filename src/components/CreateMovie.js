@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import "../App.css";
 import axios from "axios";
 
@@ -35,15 +34,7 @@ class CreateMovie extends Component {
     axios
       .post("http://localhost:8082/api/movies", data)
       .then((res) => {
-        // this.setState({
-        //   title: "",
-        //   original_language: "",
-        //   production_companies: "",
-        //   overview: "",
-        //   release_date: "",
-        //   runtime: "",
-        // });
-        alert("hihihihih");
+        alert("Movie Created");
         this.props.history.push("/");
       })
       .catch((err) => {
@@ -56,12 +47,6 @@ class CreateMovie extends Component {
       <div className="CreateMovie">
         <div className="container">
           <div className="row">
-            <div className="col-md-8 m-auto">
-              <br />
-              <Link to="/" className="btn btn-outline-warning float-left">
-                Show Movie List
-              </Link>
-            </div>
             <div className="col-md-8 m-auto">
               <h1 className="display-4 text-center">Add Movie</h1>
               <p className="lead text-center">Create new movie</p>

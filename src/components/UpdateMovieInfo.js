@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
 import axios from "axios";
 import "../App.css";
 
@@ -70,12 +69,6 @@ class UpdateMovieInfo extends Component {
       <div className="UpdateMovieInfo">
         <div className="container">
           <div className="row">
-            <div className="col-md-8 m-auto">
-              <br />
-              <Link to="/" className="btn btn-outline-warning float-left">
-                Show Movie List
-              </Link>
-            </div>
             <div className="col-md-8 m-auto">
               <h1 className="display-4 text-center">Edit Movie</h1>
               <p className="lead text-center">Update Movie's Info</p>
