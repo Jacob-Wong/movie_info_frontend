@@ -34,7 +34,8 @@ class App extends Component {
     let title = this.state.searchTitle;
     console.log("i am clicking at " + this.state.searchTitle);
     this.setState({ title: null });
-    window.location.href = "http://localhost:3000/search-movie/" + title;
+    window.location.href =
+      "https://movie-info-frontend.herokuapp.com/search-movie/" + title;
   }
 
   render() {
