@@ -32,7 +32,7 @@ class CreateMovie extends Component {
     };
 
     axios
-      .post("http://localhost:8082/api/movies", data)
+      .post("https://movie-info-backend-api.herokuapp.com/api/movies", data)
       .then((res) => {
         alert("Movie Created");
         this.props.history.push("/");

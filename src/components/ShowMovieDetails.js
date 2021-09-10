@@ -14,7 +14,10 @@ class showMovieDetails extends Component {
   componentDidMount() {
     // console.log("Print id: " + this.props.match.params.id);
     axios
-      .get("http://localhost:8082/api/movies/" + this.props.match.params.id)
+      .get(
+        "https://movie-info-backend-api.herokuapp.com/api/movies/" +
+          this.props.match.params.id
+      )
       .then((res) => {
         // console.log("Print-showMovieDetails-API-response: " + res.data);
         this.setState({
@@ -28,7 +31,7 @@ class showMovieDetails extends Component {
 
   onDeleteClick(id) {
     axios
-      .delete("http://localhost:8082/api/movies/" + id)
+      .delete("https://movie-info-backend-api.herokuapp.com/api/movies/" + id)
       .then((res) => {
         this.props.history.push("/");
       })

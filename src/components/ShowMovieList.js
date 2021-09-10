@@ -21,7 +21,9 @@ class ShowMovieList extends Component {
     }
 
     axios
-      .get("http://localhost:8082/api/movies?title=" + title)
+      .get(
+        "https://movie-info-backend-api.herokuapp.com/api/movies?title=" + title
+      )
       .then((res) => {
         this.setState({
           movies: res.data,
