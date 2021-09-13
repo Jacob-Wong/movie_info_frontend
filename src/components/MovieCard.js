@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
+import img from "./show.jpg";
 
 const MovieCard = (props) => {
   const movie = props.movie;
@@ -9,8 +10,8 @@ const MovieCard = (props) => {
     <div className="card-container">
       <img
         // src="https://commapress.co.uk/books/the-book-of-cairo/cairo-provisional-v3/image%2Fspan3"
-        src="./Monochrome Film Signs Poster.jpeg"
-        alt=""
+        src={img}
+        alt="movie icon"
       />
       <div className="desc">
         <h2>
